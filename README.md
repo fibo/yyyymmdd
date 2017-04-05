@@ -68,4 +68,4 @@ Use [cal] to output days...
 
 [MIT](http://g14n.info/mit-license)
 
-[cal] https://en.wikipedia.org/wiki/Cal_(Unix) "cal"
+[cal]: https://en.wikipedia.org/wiki/Cal_(Unix) "cal"
