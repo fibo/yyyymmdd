@@ -1,6 +1,6 @@
 # yyyymmdd
 
-> uses cal Unix program to print out the days in a month in YYYYMMDD format
+> uses cal Unix program to print out the days in a month
 
 [![KLP](https://img.shields.io/badge/kiss-literate-orange.svg)](http://g14n.info/kiss-literate-programming)
 
