@@ -6,10 +6,19 @@ function yyyymmdd () {
     else
         YYYY=${YYYYMM:0:4}
         MM=${YYYYMM:4:2}
+    YYYYMMDD_MAX=99999999
+    if [ ! -z "$UNTIL" ]
+    then
+        YYYYMMDD_MAX=$(date -d "$UNTIL" +%Y%m%d)
+    fi
         for d in $(cal -h $MM $YYYY | grep "^ *[0-9]")
         do
             DD=$(printf "%02d" $d)
-            echo $YYYY$MM$DD
+            YYYYMMDD=$YYYY$MM$DD
+            if [ $YYYYMMDD -le $YYYYMMDD_MAX ]
+            then
+                echo $YYYY$MM$DD
+            fi
         done
     fi
 }
