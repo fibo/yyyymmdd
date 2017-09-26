@@ -66,9 +66,11 @@ Handle `UNTIL` option
             YYYYMMDD_MAX=$(date -d "$UNTIL" +%Y%m%d)
         fi
 
-Use [cal] to output days...
+Use [cal] to output days: on Linux it could highlight current day;
+option `cal -h` turns it off but it is not supported on MacOS so a
+regexp is used to get an alphanumeric output.
 
-            for d in $(cal -h $MM $YYYY | grep "^ *[0-9]")
+            for d in $(cal $MM $YYYY | cal | perl -ple 's/[^[:print:]]_//g' | grep "^ *[0-9]")
             do
                 DD=$(printf "%02d" $d)
                 YYYYMMDD=$YYYY$MM$DD
