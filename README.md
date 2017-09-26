@@ -2,7 +2,15 @@
 
 > uses cal Unix program to print out the days in a month
 
+[Installation](#installation) |
+[Usage](#usage) |
+[Annotated source](#annotated-source) |
+[License](#license)
+
 [![KLP](https://img.shields.io/badge/kiss-literate-orange.svg)](http://g14n.info/kiss-literate-programming)
+
+<img src="https://rawgit.com/fibo/os-icons8/master/Apple-50.png" width="50" height="50" />
+<img src="https://rawgit.com/fibo/os-icons8/master/Linux-50.png" width="50" height="50" />
 
 ## Installation
 
@@ -89,5 +97,7 @@ regexp is used to get an alphanumeric output.
 ## License
 
 [MIT](http://g14n.info/mit-license)
+
+<sub>OS icons provided by <a href="https://icons8.com/">icons8</a>.</sub>
 
 [cal]: https://en.wikipedia.org/wiki/Cal_(Unix) "cal"
