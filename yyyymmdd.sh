@@ -11,7 +11,7 @@ function yyyymmdd () {
     then
         YYYYMMDD_MAX=$(date -d "$UNTIL" +%Y%m%d)
     fi
-        for d in $(cal $MM $YYYY | cal | perl -ple 's/[^[:print:]]_//g' | grep "^ *[0-9]")
+        for d in $(cal $MM $YYYY | perl -ple 's/[^[:print:]]_//g' | grep "^ *[0-9]")
         do
             DD=$(printf "%02d" $d)
             YYYYMMDD=$YYYY$MM$DD
